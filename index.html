@@ -108,6 +108,20 @@
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
+    function instanceSum(array, searchElement){
+        let reduced = array.reduce(((accumulator, currentValue) => {
+            const occurrence = (currentValue === searchElement) ? 1 : 0;
+            return accumulator + occurrence;
+        }), 0)
+
+        console.log(searchElement, reduced);
+    }
+
+    let uniqueData = data.filter()
+
+    for (let i = 0; i < data.length; i++){
+        instanceSum(data, data[i]);
+    }
   </script>
 </body>
 </html>
